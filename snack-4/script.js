@@ -5,5 +5,15 @@ const posts = [
   { author: 'Enrico', date: '09/12/2021', content: 'lorem ipsum...' },
 ]
 
+let authorNames =[]
+for(let i=0;i<posts.length;i++){
+  const post=posts[i]
+  console.log(post);
+  authorNames.push(post.author)
+  
+}
+console.log(authorNames.join(" "));
+
+
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
