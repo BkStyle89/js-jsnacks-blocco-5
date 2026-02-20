@@ -24,7 +24,7 @@ const students = [
 
 //ciclo For
 
-let studente = []
+/* let studente = []
 
 for(let i= 0 ; i< students.length; i++){
   const student= students[i]
@@ -35,3 +35,13 @@ for(let i= 0 ; i< students.length; i++){
   
 }
 console.log(studente);
+ */
+
+// find
+
+const secondStudent =students.find(student=>{
+  if(student.id==2){
+    return true
+  }
+})
+console.log(secondStudent);
