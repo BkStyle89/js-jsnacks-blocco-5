@@ -4,14 +4,22 @@ const people = [
   { name: 'Marco', age: 67 }
 ];
 
-let names = []
+/* let names = []
 for(let i=0; i< people.length; i++){
   const person = people[i]
   console.log(person.name);
   names.push(person.name)
   
 }
+console.log(names.join(" ")); */
+
+let names=[]
+people.forEach (person =>{
+  console.log(person)
+  names.push(person.name)
+})
 console.log(names.join(" "));
+
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
