@@ -23,8 +23,8 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-//ciclo For
-
+//ciclo Fore
+/* 
 const classeStudente=[]
 for(let i=0;i< students.length;i++){
   const student=students[i]
@@ -34,3 +34,14 @@ for(let i=0;i< students.length;i++){
   }
 }
 console.log(classeStudente);
+ */
+
+let result =[]
+const studentClass =students.map((student)=>{
+  return `${student.class}`
+  
+})
+/* console.log(studentClass[0]); */
+result.push(studentClass[0])
+console.log(result);
+
